@@ -14,9 +14,6 @@ app.get("/", (req, res) => {
 var leaderboardRouter = require('./routes/leaderboard');
 app.use("/leaderboard", leaderboardRouter);
 
-var apiRouter = require('./routes/api');
-app.use("/api", apiRouter);
-
 app.use("/assets", express.static(__dirname + "/assets"))
 
 app.listen(port, () => {
