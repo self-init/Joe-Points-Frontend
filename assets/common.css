@@ -1,0 +1,136 @@
+:root {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: inline;
+}
+
+a {
+    color: cyan;
+}
+
+.leaderboard {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.leaderboardEntry {
+    border-radius: 5px;
+    background-color: gray;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    transition: 250ms;
+}
+
+.leaderboardEntry[data-rank="1"] {
+    background-color: gold;
+    background-image: linear-gradient(90deg, gold 0%, white 50%, gold 90%, white 120%);
+    background-size: 400% 400%;
+    animation: 1s gradient-animation 0s ease 1 forwards;
+}
+
+.leaderboardEntry[data-rank="2"] {
+    background-color: silver;
+    background-image: linear-gradient(90deg, darkgray 0%, white 50%, darkgray 90%, white 120%);
+    background-size: 400% 400%;
+    animation: 1s gradient-animation 200ms ease 1 forwards;
+}
+
+.leaderboardEntry[data-rank="3"] {
+    background-color: #c87420;
+    background-image: linear-gradient(90deg, #c87420 0%, white 50%, #c87420 90%, white 120%);
+    background-size: 400% 400%;
+    animation: 1s gradient-animation 400ms ease 1 forwards;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Starting position */
+    }
+    100% {
+        background-position: 100% 50%; /* Mid-point position */
+    }
+}
+
+.squareButton {
+    aspect-ratio: 1;
+    width: 25px;
+    height: 25px;
+    justify-self: end;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    transition: 250ms;
+}
+
+.squareButton:hover {
+    background-color: gray;
+}
+
+.leaderboardStat {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: left;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.leaderboardName {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 75%;
+}
+
+.leaderboardRank {
+    aspect-ratio: 1;
+    width: 35px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.leaderboardPoints {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboardPointsNumber {
+    width: 100%;
+    text-align: center;
+}
+
+.pagesContainer {
+    white-space: nowrap;
+}
+
+.pagesContainer>* {
+    display: inline-block;
+}
+
+.edit {
+    background-color: transparent;
+    border: none;
+    color: white;
+    -moz-appearance: textfield;
+}
+
+.edit::-webkit-outer-spin-button,
+.edit::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
