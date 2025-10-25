@@ -137,7 +137,11 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 <<<<<<< HEAD
+<<<<<<< HEAD
 vite.config.ts.timestamp-*
 =======
 vite.config.ts.timestamp-*
 >>>>>>> 8fd4b06 (Initial Commit)
+=======
+vite.config.ts.timestamp-*
+>>>>>>> f14bc11fbb6c30c3154837f9951b0ed5d4d51ed9
